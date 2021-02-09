@@ -90,6 +90,7 @@
     <access origin="https://api.coinbase.com" />
     <access origin="https://coinbase.com" />
     <access origin="https://www.coinbase.com" />
+    <access origin="https://wallet.assetify.net" />
     <allow-navigation href="gap://ready" />
     <edit-config file="app/src/main/AndroidManifest.xml" mode="merge" target="/manifest/application">
         <application android:icon="@mipmap/ic_launcher" android:resource="@drawable/fcm_push_icon" android:roundIcon="@mipmap/ic_launcher_round" />
