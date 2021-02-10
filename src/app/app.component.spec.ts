@@ -16,6 +16,8 @@ import { ProfileProvider } from '../providers/profile/profile';
 import { ProvidersModule } from './../providers/providers.module';
 import { CopayApp } from './app.component';
 
+import {} from 'jasmine';
+
 describe('CopayApp', () => {
   let fixture;
   let component;
