@@ -44,6 +44,7 @@
     "lint": "ionic-app-scripts lint",
     "ionic:build": "ionic-app-scripts build",
     "ionic:serve": "ionic-app-scripts serve --nolivereload",
+    "ionic:serve:nobrowser": "ionic-app-scripts serve --nolivereload --nobrowser",
     "ionic:test": "npm run env:prod && node --max-old-space-size=8192 ./node_modules/@ionic/app-scripts/bin/ionic-app-scripts.js build --release --aot true --environment prod --output-hashing all --sourcemaps false --extract-css true --named-chunks false --build-optimizer true",
     "watch": "ng test --browsers=Chrome",
     "test": "npm run env:dev && npm run test:lint && npm run test:ci",
@@ -222,7 +223,7 @@
     "ts-node": "5.0.0",
     "tslint": "5.8.0",
     "tslint-config-prettier": "1.18.0",
-    "typescript": "2.6.2",
+    "typescript": "~4.0.2",
     "webpack": "3.12.0",
     "webpack-obfuscator": "0.17.3"
   },
