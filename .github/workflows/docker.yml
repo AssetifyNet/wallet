@@ -8,12 +8,10 @@
 
 name: Build Docker Images
 
-on:
-  push:
-    branches: ['master', "ci"]
+on: workflow_dispatch
 
 jobs:
-  build-bws:
+  build-wallet:
     runs-on: ubuntu-latest
     steps:
       -
