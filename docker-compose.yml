@@ -1,0 +1,13 @@
+version: '3.7'
+
+services:
+    app:
+        # image: martinkey/assetify-core:latest
+        # restart: always
+        container_name: test
+        build:
+            context: .
+#        env_file: .env
+        ports:
+            - '8100:8100'
+
