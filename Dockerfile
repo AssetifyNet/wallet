@@ -18,12 +18,8 @@ RUN npm run ionic:build
 
 # CMD ["npm", "run", "ionic:serve:nobrowser"]
 
-FROM nginx AS service
+FROM nginx:latest AS service
 
-COPY nginx/ /etc/nginx/
-# COPY letsencrypt/ /etc/letsencrypt/
-RUN mkdir -p /var/www/_letsencrypt
-
-COPY --from=build app/ /var/www/
+COPY --from=build app/www/ /usr/share/nginx/html/
 
 EXPOSE 80
