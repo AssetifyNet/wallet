@@ -9,6 +9,7 @@ RUN apt-get install git
 
 RUN npm install
 RUN npm run apply:copay
+RUN npm run env:prod
 RUN npm run ionic:build
 # Moved to the docker-compose
 # RUN npm run start
